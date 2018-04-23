@@ -5,15 +5,28 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     enum State
     {
+        intro,
         menu,
         inGame,
         pause
     }
 
+    [System.Serializable]
+    struct SpawnInfo
+    {
+        [SerializeField] private GameObject spawn;
+        [SerializeField] private float delay;
+        [SerializeField] private float spawnRate;
+        private float timer;
+        [SerializeField] private float healthCondition;
+    }
+
+    private int m_spawnedEnemies = 0;
     private State m_currentState = State.menu;
-    
 
+    private float m_roundTimer;
 
+    [SerializeField] SpawnInfo[] m_spawnInfo;
 
 	// Use this for initialization
 	void Start () {
@@ -25,11 +38,18 @@ public class GameManager : MonoBehaviour {
         if (Input.GetKey(KeyCode.Escape))
             GameOver();
 
+        if(m_currentState == State.intro)
+        {
+
+        }
 	}
 
 
 
+    public void IntroOver()
+    {
 
+    }
     public void Pause()
     {
         m_currentState = State.pause;
