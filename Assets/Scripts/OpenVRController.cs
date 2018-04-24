@@ -5,6 +5,7 @@ using UnityEngine;
 public class OpenVRController : MonoBehaviour {
 
     private SteamVR_TrackedObject m_trackedObj;
+    [SerializeField] private GameObject m_handle;
 
     private SteamVR_Controller.Device m_Controller
     {
@@ -23,5 +24,6 @@ public class OpenVRController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Other stuff
+        
 	}
 }

@@ -322,13 +322,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7886d6bc92750734286893947717d6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_cooldown: 0
-  m_heatPerShot: 0
+  m_cooldown: 10
+  m_heatPerShot: 2
   m_heat: 0
   m_coolDelay: 0.5
   m_heatThreshold: 70
   m_shotVariation: 0.0115
-  m_rateOfFire: 1
+  m_rateOfFire: 10
   m_timeBetweenShots: 0
   m_currentROF: 0
   m_laser: {fileID: 1366434155155828, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
@@ -1281,3 +1281,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 19.967001, y: -51.969, z: -11.492001}
+--- !u!1001 &1906113592
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4985496072447894, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985496072447894, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -12.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985496072447894, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985496072447894, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985496072447894, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985496072447894, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985496072447894, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985496072447894, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fc20ec2d1842a014abc302d8d8c1223c, type: 2}
+  m_IsPrefabParent: 0
