@@ -24,5 +24,7 @@ public class OculusController : MonoBehaviour {
     {
         m_leftHand.transform.position = OVRInput.GetLocalControllerPosition(m_leftController);
         m_rightHand.transform.position = OVRInput.GetLocalControllerPosition(m_rightController);
+
+        
     }
 }

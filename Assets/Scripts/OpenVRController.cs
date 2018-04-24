@@ -6,6 +6,10 @@ public class OpenVRController : MonoBehaviour {
 
     private SteamVR_TrackedObject m_trackedObj;
     [SerializeField] private GameObject m_handle;
+    [SerializeField] private GameObject m_gun;
+    [SerializeField] private OpenVRController m_otherHnad;
+    [SerializeField] private bool m_trigger;
+    
 
     private SteamVR_Controller.Device m_Controller
     {
@@ -26,4 +30,24 @@ public class OpenVRController : MonoBehaviour {
 		//Other stuff
         
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.name == "Handle")
+        {
+            if (m_Controller.GetHairTriggerDown())
+            {
+                RaycastHit info;
+
+                if (Physics.Raycast(m_trackedObj.transform.position, m_trackedObj.transform.forward, out info, 100))
+                {
+                    m_gun.GetComponent<IGun>().LookAt(info.point);
+                }
+                if (m_trigger)
+                {
+                    m_gun.GetComponent<IGun>().Fire();
+                }
+            }
+        }
+    }
 }
