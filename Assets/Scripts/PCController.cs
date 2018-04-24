@@ -20,5 +20,9 @@ public class PCController : MonoBehaviour {
         {
             m_gunScript.Fire();
         }
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitInfo;
+        if (Physics.Raycast(ray, out hitInfo))
+            m_gunScript.LookAt(hitInfo.point);
     }
 }

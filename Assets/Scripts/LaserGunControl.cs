@@ -21,6 +21,7 @@ public class LaserGunControl : MonoBehaviour, IGun {
     private float m_timer;
 
     [SerializeField] private Transform m_barrelEnd;
+    [SerializeField] private GameObject m_light;
 
     
     // Use this for initialization
@@ -38,6 +39,14 @@ public class LaserGunControl : MonoBehaviour, IGun {
     {
         if(m_timer < m_rateOfFire)
             m_timer += Time.deltaTime;
+
+        RaycastHit info;
+        if (Physics.Raycast(m_barrelEnd.position, m_barrelEnd.forward, out info, 100))
+        {
+            if (m_light != null)
+                m_light.transform.position = info.point - ((info.point - m_barrelEnd.position).normalized * 0.1f) ;
+        }
+
     }
 
     public bool Fire()
