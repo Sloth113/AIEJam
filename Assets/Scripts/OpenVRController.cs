@@ -30,22 +30,23 @@ public class OpenVRController : MonoBehaviour {
 		//Other stuff
         
 	}
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
+        Debug.Log("InGun");
         if(other.name == "Handle")
         {
-            if (m_Controller.GetHairTriggerDown())
+            if (m_Controller.GetHairTrigger())
+            {
+                    m_gun.GetComponent<IGun>().Fire();
+             
+            }
+            if (m_Controller.GetPress(SteamVR_Controller.ButtonMask.Grip))
             {
                 RaycastHit info;
 
-                if (Physics.Raycast(m_trackedObj.transform.position, m_trackedObj.transform.forward, out info, 100))
+                if (Physics.Raycast(m_trackedObj.transform.position, -m_trackedObj.transform.up, out info, 100))
                 {
                     m_gun.GetComponent<IGun>().LookAt(info.point);
-                }
-                if (m_trigger)
-                {
-                    m_gun.GetComponent<IGun>().Fire();
                 }
             }
         }
