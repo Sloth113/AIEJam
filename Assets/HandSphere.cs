@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //For oculus
 public class HandSphere : MonoBehaviour {
-
+	public bool inTrigger = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,8 +17,10 @@ public class HandSphere : MonoBehaviour {
     {
         if(other.transform.name == "Handle")
         {
-            //if click
-            //set in Controller
+			inTrigger = true;
         }
     }
+	private void OnTriggerExit(Collider other){
+		inTrigger = false;
+	}
 }
