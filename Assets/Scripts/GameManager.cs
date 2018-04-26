@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour {
         [SerializeField] public float spawnRate; //between each spawn
         public float timer; //Its own counter
         [SerializeField] public float healthCondition; //if health is above this spawn
+        [SerializeField] public GameObject spawnObject;
     }
 
     private int m_spawnedEnemies = 0;
@@ -67,8 +68,10 @@ public class GameManager : MonoBehaviour {
             {
                 if(m_spawnInfo[i].timer >= m_spawnInfo[i].spawnRate)
                 {
-                    Instantiate<GameObject>(m_spawnInfo[i].spawn);
-                    m_spawnInfo[i].timer = 0;
+                    //Instantiate<GameObject>(m_spawnInfo[i].spawn);
+                    GameObject spawn = Instantiate<GameObject>(m_spawnInfo[i].spawn, m_spawnInfo[i].spawnObject.transform.position, m_spawnInfo[i].spawnObject.transform.rotation);
+                    spawn.GetComponent<AI>().setTarget(m_spawnInfo[i].spawnObject.transform);
+                   m_spawnInfo[i].timer = 0;
                 }
                 else
                 {
