@@ -93,7 +93,7 @@ public class LaserGunControl : MonoBehaviour, IGun {
             {
                 if(info.transform.tag == "Enemy")
                 {
-                    //info.transform.gameObject.GetComponent<AI>().hit();
+					info.transform.gameObject.GetComponent<AI> ().RemoveHealth ();
                 }
             }
             //laser effect

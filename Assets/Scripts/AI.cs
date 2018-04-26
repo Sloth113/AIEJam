@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AI : MonoBehaviour {
 
+	PlayerHealthTemperaryScript PHTC;
 	public int health;
 	public Transform target;
 	public float minDis;
@@ -16,6 +17,7 @@ public class AI : MonoBehaviour {
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
 		speed = Random.Range (minSpeed, maxSpeed + 1);
+		PHTC = FindObjectOfType<PlayerHealthTemperaryScript> ();
 	}
 	
 	// Update is called once per frame
@@ -25,6 +27,10 @@ public class AI : MonoBehaviour {
 		if (Vector3.Distance (transform.position, target.position) < minDis) {
 			Node targetNode = target.GetComponent<Node> ();
 			targetNode.CheckNextNode (GetComponent<AI>());
+		}
+		if (health <= 0) 
+		{
+			OnDeath ();
 		}
 
 	}
@@ -36,10 +42,15 @@ public class AI : MonoBehaviour {
 
 	public void KillPlayer()
 	{
-		print ("He Ded");
+		PHTC.CheckHealth ();
+		Destroy (gameObject);
 	}
-	public void setHealth()
+	public void RemoveHealth()
 	{
-		health--;
+		health --;
+	}
+	public void OnDeath()
+	{
+		Destroy (gameObject);
 	}
 }
