@@ -370,5 +370,5 @@ MonoBehaviour:
   health: 3
   target: {fileID: 0}
   minDis: 0.1
-  minSpeed: 1
-  maxSpeed: 3
+  minSpeed: 0.5
+  maxSpeed: 1

@@ -452,4 +452,4 @@ MonoBehaviour:
   target: {fileID: 0}
   minDis: 0.1
   minSpeed: 1
-  maxSpeed: 3
+  maxSpeed: 1.5
