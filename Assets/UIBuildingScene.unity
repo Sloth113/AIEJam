@@ -4831,7 +4831,97 @@ MonoBehaviour:
     healthCondition: 0
     spawnObject: {fileID: 704707599}
   - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
+    delay: 20
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 224181182}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 30
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 704707599}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 40
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 224181182}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 45
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 704707599}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 50
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 224181182}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 55
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 704707599}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 60
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 224181182}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 62.5
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 704707599}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 65
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 224181182}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 67.5
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 704707599}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 70
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 224181182}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 71
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 704707599}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 72
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 224181182}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 73
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 704707599}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 74
+    spawnRate: 13
+    timer: 13
+    healthCondition: 0
+    spawnObject: {fileID: 224181182}
+  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
+    delay: 75
     spawnRate: 13
     timer: 13
     healthCondition: 0
@@ -4841,97 +4931,7 @@ MonoBehaviour:
     spawnRate: 13
     timer: 13
     healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
-  - spawn: {fileID: 1175111581335200, guid: 83a12809b0c49e44f8c477a9726d2baa, type: 2}
-    delay: 10
-    spawnRate: 13
-    timer: 13
-    healthCondition: 0
-    spawnObject: {fileID: 704707599}
+    spawnObject: {fileID: 224181182}
 --- !u!4 &704373792
 Transform:
   m_ObjectHideFlags: 0
