@@ -7,6 +7,10 @@ public class PlayerHealthTemperaryScript : MonoBehaviour {
 	public int playerHealth;
 	public Text healthDisplay;
 
+	float score;
+	public Text scoreDisplay;
+	public GameObject DeathScreen;
+
 	public void CheckHealth()
 	{
 		playerHealth -= 1;
@@ -19,5 +23,12 @@ public class PlayerHealthTemperaryScript : MonoBehaviour {
 	void OnDeath()
 	{
 		healthDisplay.text = ("LIFE: DEAD");
+		DeathScreen.SetActive (true);
+	}
+
+	public void addScore(float scoreToAdd)
+	{
+		score += scoreToAdd;
+		scoreDisplay.text = ("score: " + score);
 	}
 }

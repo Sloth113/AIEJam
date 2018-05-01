@@ -11,6 +11,7 @@ public class AI : MonoBehaviour {
 	float speed;
 	public float minSpeed;
 	public float maxSpeed;
+	public float pointsForKill;
 	Rigidbody rb;
 
 	// Use this for initialization
@@ -51,6 +52,12 @@ public class AI : MonoBehaviour {
 	}
 	public void OnDeath()
 	{
+		FindObjectOfType<PlayerHealthTemperaryScript> ().addScore (pointsForKill);
 		Destroy (gameObject);
+	}
+
+	public void SetSpeed(float newSpeed)
+	{
+		speed = newSpeed;
 	}
 }

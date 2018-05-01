@@ -153,7 +153,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1800c8088ade5e94e800a3e4b03bb5fb, type: 3}
+  - {fileID: 2100000, guid: 06c50431c9d9ab541ad31b2d74ef57dd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -372,3 +372,4 @@ MonoBehaviour:
   minDis: 0.1
   minSpeed: 1
   maxSpeed: 3
+  pointsForKill: 4
