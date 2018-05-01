@@ -24,6 +24,7 @@ public class PlayerHealthTemperaryScript : MonoBehaviour {
 	{
 		healthDisplay.text = ("LIFE: DEAD");
 		DeathScreen.SetActive (true);
+        FindObjectOfType<GameManager>().GameOver();
 	}
 
 	public void addScore(float scoreToAdd)

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     enum State
@@ -9,7 +10,8 @@ public class GameManager : MonoBehaviour {
         intro,
         menu,
         inGame,
-        pause
+        pause,
+        over
     }
 
     [System.Serializable]
@@ -54,6 +56,13 @@ public class GameManager : MonoBehaviour {
                 break;
             case State.pause:
 
+                break;
+            case State.over:
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    //Load scene
+                    SceneManager.LoadScene(0);
+                }
                 break;
         }
     }
@@ -105,7 +114,12 @@ public class GameManager : MonoBehaviour {
 
     public void GameOver()
     {
-        m_currentState = State.menu;
+        m_currentState = State.over;
+    }
+
+    public void Reset()
+    {
+        m_currentState = State.inGame;
     }
 
 
